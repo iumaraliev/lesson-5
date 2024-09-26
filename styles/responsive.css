@@ -9,7 +9,7 @@
   }
 
   .hero-info img {
-    display: none; /* Hide image for medium screens */
+    display: none;
   }
 }
 
@@ -17,10 +17,10 @@
   h1 {
     font-size: 3.2rem;
   }
-  /* Adjust the header layout for smaller screens */
+
   .nav-links {
     flex-direction: column;
-    display: none; /* Initially hide menu for mobile */
+    display: none;
   }
 
   .flex.nav-logo {
@@ -65,7 +65,6 @@
 }
 
 @media (max-width: 480px) {
-  /* More specific adjustments for very small screens */
   .hero-title {
     font-size: 1.5rem;
   }
