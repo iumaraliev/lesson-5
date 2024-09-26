@@ -1,0 +1,94 @@
+@media (max-width: 1024px) {
+  .nav-links li {
+    margin: 0 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-info img {
+    display: none; /* Hide image for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  /* Adjust the header layout for smaller screens */
+  .nav-links {
+    flex-direction: column;
+    display: none; /* Initially hide menu for mobile */
+  }
+
+  .flex.nav-logo {
+    justify-content: space-between;
+  }
+
+  nav.flex {
+    flex-direction: column;
+  }
+
+  /* Hamburger menu */
+  .nav-logo:after {
+    content: '☰';
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-logo.active + .nav-links {
+    display: flex;
+  }
+
+  .hero-info {
+    flex-direction: column;
+  }
+
+  .meeting {
+    flex-direction: column;
+  }
+
+  .meeting img {
+    width: 100%;
+  }
+
+  .employees {
+    flex-direction: column;
+  }
+
+  .employee {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* More specific adjustments for very small screens */
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .meeting-box {
+    padding: 10px;
+  }
+
+  .ideas,
+  .designers {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .employees {
+    flex-direction: column;
+  }
+
+  .employee-info {
+    text-align: center;
+  }
+}
